@@ -61,13 +61,26 @@ nav.navbar {
 
 #about {
   background-color: #fcf9f9;
-  height: 500px;
+  height: 800px;
+  overflow: auto;
 }
 
 #innerAbout {
   display: none;
   text-align: center;
   padding-top: 10px;
+}
+
+.thumbnail {
+  height: 400px;
+  overflow: hidden;
+}
+
+.thumbnail:hover {
+  border-bottom: solid 3px grey;
+  border-right: solid 3px grey;
+  height: 500px;
+  overflow: auto;
 }
 
 #contact {
