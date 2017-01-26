@@ -1,9 +1,9 @@
-<!--enable all tooltips-->
+//enable all tooltips
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-<!--shrink nav bar when scrolling down-->
+//shrink nav bar when scrolling down
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
@@ -43,6 +43,22 @@ $(window).scroll(function() {
   if($(document).scrollTop() > 50) {
     $("#innerAbout").animate({width: "show"}, 350);
   } else {
-    console.log($(document).scrollTop());
+    //console.log($(document).scrollTop());
   }
 });
+
+// Appear effect for innerProjects div
+$(window).scroll(function() {
+  var position = $(this).scrollTop();
+  var displayHeight = 750;
+
+  if(position >= displayHeight) {
+    $("#projects .container-fluid h1").fadeIn("fast");
+    $("#projects").animate({marginTop: "0.2in"}, 400);
+    $("#innerProjects").delay(400).fadeIn("fast");
+    $("#innerProjects").animate({marginTop: "0.2in"}, 400);
+  }
+});
+
+var w = $(window).width();
+$("#experience").css({"background-size" : +w+ " 500px"});
