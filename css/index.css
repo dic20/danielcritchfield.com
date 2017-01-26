@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  background-color: #fcf9f9;
 }
 
 hr {
@@ -61,7 +62,7 @@ nav.navbar {
 
 #about {
   background-color: #fcf9f9;
-  height: 800px;
+  height: 650px;
   overflow: auto;
 }
 
@@ -81,6 +82,23 @@ nav.navbar {
   border-right: solid 3px grey;
   height: 500px;
   overflow: auto;
+}
+
+#projects {
+  height: 700px;
+  overflow: auto;
+  background-color: #fcf9f9;
+}
+
+#projects > .container-fluid > h1 {
+  display: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#innerProjects {
+  text-align: center;
+  display: none;
 }
 
 #contact {
