@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 // animation for content to slide in when you scroll down
 $(window).scroll(function() {
-  if($(document).scrollTop() > 50) {
+  if($(document).scrollTop() > 100) {
     $("#innerAbout").animate({width: "show"}, 350);
   } else {
     //console.log($(document).scrollTop());
