@@ -97,7 +97,7 @@ nav.navbar {
 }
 
 #projects {
-  height: 700px;
+  height: 650px;
   overflow: auto;
   background-color: #fcf9f9;/*#fcf9f9;*/
 }
@@ -106,6 +106,7 @@ nav.navbar {
   display: none;
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 #innerProjects {
@@ -118,8 +119,13 @@ nav.navbar {
   margin: 70px 0 100px 0;
 }
 
-.innerProjectsCol > .thumbnail > img:hover {
+.innerProjectsCol > img:hover {
   cursor: pointer;
+}
+
+.innerProjectsCol > .thumbnail {
+  border-radius: 25em;
+  height: 340px;
 }
 
 #contact {
