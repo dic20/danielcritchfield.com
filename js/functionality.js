@@ -54,6 +54,7 @@ $(window).scroll(function() {
 
   if(position >= displayHeight) {
     $("#projects .container-fluid h1").fadeIn("fast");
+    $("#projects .container-fluid h5").fadeIn("fast");
     $("#projects").animate({marginTop: "0.2in"}, 400);
     $("#innerProjects").delay(400).fadeIn("fast");
     $("#innerProjects").animate({marginTop: "0.2in"}, 400);

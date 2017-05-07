@@ -62,7 +62,7 @@
             <button type="button" class="btn btn-secondary" onclick="window.open('https://docs.google.com/document/d/1hUemnmz_5YQOcONR5YspBRuuzF5B_cpQc7O_NANcR70/edit', '_blank')">Resume</button>
           </div>
           <div id="evalLink">
-            <a href="https://docs.google.com/document/d/1_k_Cgs50zbtjcT1NVf-KTMUe2-ZZXAqmikXVQf9yZpk/edit" target="_blank" data-toggle="tooltip" title="Confluence Intern Evaluation">Intern Evaluation</a>
+            <a href="https://docs.google.com/document/d/1_k_Cgs50zbtjcT1NVf-KTMUe2-ZZXAqmikXVQf9yZpk/edit" target="_blank" data-toggle="tooltip" title="Confluence Intern Evaluation Form">Intern Evaluation Link</a>
           </div>
           <!-- Licensing information for some of the code snippets used in this website -->
           <div class="license-link">
@@ -76,6 +76,7 @@
       <div class="container-fluid">
         <div id="innerAbout">
           <h1>A little About Myself</h1>
+          <br />
           <div class="row">
             <div class="col-md-4">
               <div class="container-fluid" id="innerAboutCol1">
@@ -97,7 +98,7 @@
                   <div class="caption">
                     <h3>Who Am I?</h3>
                     <p>
-                      I enjoy programming of almost any nature. Although I code for enjoyment, I also hope that I will be able to work on projects that help other people and influence many lives for the better.
+                      Hi my name is Daniel Critchfield and I am going to become a Computer Engineer. I enjoy studying new technologies, and figuring out creative ways to help them improve peoples' lives.
                     </p>
                   </div>
                 </div>
@@ -106,11 +107,11 @@
             <div class="col-md-4">
               <div class="container-fluid" id="innerAboutCol3">
                 <div class="thumbnail">
-                  <img src="./img/codeImage.jpeg" alt="Picture of code on a screen">
+                  <img src="./img/pexels-photo-92904.jpeg" alt="Picture of code on a screen">
                   <div class="caption">
-                    <h3>Purpose</h3>
+                    <h3>Interests</h3>
                     <p>
-                      The purpose of this site is to give you and idea of who I am and what coding experience I have. All the code for this site is in my danielcritchfield.com github repository, which can be found going through the github link at the top of the page.
+                      I have yet to find an area of programming or computer engineering that I haven't been interested in. I find the most interest out of exploring and creating new technologies, as well as being at the fore front of improving existing products.
                     </p>
                   </div>
                 </div>
@@ -120,10 +121,11 @@
         </div>
       </div>
     </div>
-    <!-- Projects -->
+    <!-- Projects Row 1-->
     <div class="row" id="projects">
       <div class="container-fluid">
         <h1>Projects</h1>
+        <h5>(Click image to see slide show of project)</h5>
         <div id="innerProjects">
           <div class="row">
             <div class="col-md-4">
@@ -285,10 +287,70 @@
               <!-- End modal -->
             </div>
             <!-- End column -->
+            <div class="col-md-4 top-padding">
+              <div class="container-fluid innerProjectsCol">
+                <!-- Clicking image triggers project3Modal -->
+                <img src="./img/coolgame.win_screenshots/coolgame.win.png" class="img-thumbnail" alt="The coolgame.win game to demo controller" data-toggle="modal" data-target="#project4Modal">
+              </div>
+              <!-- project4Modal -->
+              <div class="modal fade bs-example-modal-lg" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="projectCarousel4" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/coolgame.win.png" alt="#">
+                          <div class="carousel-caption">
+                            game to demo controller on
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_22.png" alt="gamer/dev option selection">
+                          <div class="carousel-caption">
+                            gamer/dev option selection
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_20.png" alt="left/right option select for controller function">
+                          <div class="carousel-caption">
+                            left/right option select for controller function
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_23.png" alt="#">
+                          <div class="carousel-caption">
+                            controller with specified option
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_21.png" alt="#">
+                          <div class="carousel-caption">
+                            controller with specified option
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#projectCarousel4" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#projectCarousel4" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal -->
+            </div>
+            <!-- End column -->
           </div>
         </div>
       </div>
     </div>
+    <!-- End Projects -->
     <!-- Contact -->
     <div class="row" id="contact">
       <div class="container-fluid">
