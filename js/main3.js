@@ -15,11 +15,15 @@ function start() {
         navElements[i].className = "fa fa-circle-thin";
     }
 
+    barsAnimation("purple", "65", "60", "55", 3000);
+
     // make non globe vid covers display nothing initially 
     $("#coverVidHolo").css("display", "none");
 
     // make globe vid cover display class
     $("#coverVid").addClass("displaying");
+
+    resize();
 }
 
 function resize() {
@@ -42,7 +46,7 @@ function fadeTransition(displayElementID, newActiveElementID) {
     var currentActiveElement = $(".active-element");
 
     // remove i2 animations
-    if (newActiveElementID != "i2") {
+    if (newActiveElementID != "i1") {
         $("#rows").css("display", "none");
     }
 
@@ -58,35 +62,37 @@ function fadeTransition(displayElementID, newActiveElementID) {
     fadeElement.fadeOut("slow");
     displayElement.fadeIn("slow");
 
-    if (newActiveElementID == "i2") {
-        barsAnimation();
+    if (newActiveElementID == "i1") {
+        barsAnimation("purple", "65", "60", "55", 2000);
     }
 }
 
 // creates animation out of rows to slide out to the left
-function barsAnimation() {
+function barsAnimation(color, width1, width2, width3, milliseconds) {
     var rows = document.getElementsByClassName("row");
     $("#rows").css("display", "block");
     
+    $(".row").css("background-color", color);
+
     setTimeout(function () {
         // display new options/info
         $(rows[0]).animate({
-            width: "75%",
+            width: width1+"%",
             opacity: 1
         });
         setTimeout(function () {
             $(rows[1]).animate({
-                width: "70%",
+                width: width2+"%",
                 opacity: 1
             });
             setTimeout(function () {
                 $(rows[2]).animate({
-                    width: "65%",
+                    width: width3+"%",
                     opacity: 1
                 });
-            }, 500);
-        }, 500);
-    }, 2000);
+            }, milliseconds/4);
+        }, milliseconds/4);
+    }, milliseconds);
 }
 
 
