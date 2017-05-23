@@ -56,7 +56,7 @@
 }
 
 .row:hover {
-    border-bottom: solid darkgreen 2px;
+    border-bottom: solid black 2px;
     cursor: pointer;
 }
 
