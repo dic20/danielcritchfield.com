@@ -1,0 +1,85 @@
+#mainContentDiv {
+    position: absolute;
+    background-color: black;
+    overflow: hidden;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#vid > video {
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#coverVid {
+    object-fit: cover;
+}
+
+#coverVidHolo {
+    width: 100%;
+    height: 100%;
+}
+
+.align-left-fixed {
+    top: 20%;
+    left: 2%;
+    position: fixed;
+    width: 2%;
+    height: 20%;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.btn-group-vertical > i {
+    border: none;
+    margin-top: 80%;
+    color: white;
+}
+
+.row {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 12%;
+    background-color: lawngreen;
+    color: white;
+    opacity: 0;
+    text-align: center;
+}
+
+.row:hover {
+    border-bottom: solid darkgreen 2px;
+    cursor: pointer;
+}
+
+.row1 {
+    margin-top: 150;
+}
+
+.row2 {
+    margin-top: 250px;
+}
+
+.row3 {
+    margin-top: 350px;
+}
+
+.shadow {
+    text-shadow: 1px 1px 1px black;
+}
+
+i {
+    display: block !important;
+}
+
+i:hover {
+    cursor: pointer;
+}

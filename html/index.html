@@ -1,0 +1,378 @@
+<!DOCTYPE html5>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- The above2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <meta name="author" content="Daniel Critchfield">
+
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--specific css for this page -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="topDiv"></div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" id="myNavbar" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#topDiv">Daniel Critchfield</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- Experience -->
+  <div class="container-fluid">
+    <div class="row" id="experience">
+      <div class="container-fluid">
+        <div class="col-xl-12 img-fluid">
+          <div id="innerExperience">
+            <h1>Experience</h1>
+            <hr />
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://github.com/dic20', '_blank')">Github</button>
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://www.linkedin.com/in/daniel-critchfield-83b17b127/', '_blank')">Linkedin</button>
+            <button type="button" class="btn btn-secondary" onclick="window.open('https://docs.google.com/document/d/1hUemnmz_5YQOcONR5YspBRuuzF5B_cpQc7O_NANcR70/edit', '_blank')">Resume</button>
+          </div>
+          <div id="evalLink">
+            <a href="https://docs.google.com/document/d/1_k_Cgs50zbtjcT1NVf-KTMUe2-ZZXAqmikXVQf9yZpk/edit" target="_blank" data-toggle="tooltip" title="Confluence Intern Evaluation Form">Intern Evaluation Link</a>
+          </div>
+          <!-- Licensing information for some of the code snippets used in this website -->
+          <div class="license-link">
+            <a href="http://bootsnipp.com/license" target="_blank" data-toggle"tooltip" title="Some snippets of code were used under this license information">MIT License link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div class="row" id="about">
+      <div class="container-fluid">
+        <div id="innerAbout">
+          <h1>A little About Myself</h1>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="container-fluid" id="innerAboutCol1">
+                <div class="thumbnail">
+                  <img src="./img/cathedral.jpg" alt="Picture of the cathedral of learning" id="cathedral">
+                  <div class="caption">
+                    <h3>University of Pittsburgh</h3>
+                    <p>
+                      I am a senior computer engineering student at the University of Pittsburgh. I am focusing on software development, and plan to continue learning new programming languages and technologies as I progress through my career.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container-fluid" id="innerAboutCol2">
+                <div class="thumbnail">
+                  <img src="./img/meIsrael.jpg" alt="Picture of me in Israel">
+                  <div class="caption">
+                    <h3>Who Am I?</h3>
+                    <p>
+                      Hi my name is Daniel Critchfield and I am going to become a Computer Engineer. I enjoy studying new technologies, and figuring out creative ways to help them improve peoples' lives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="container-fluid" id="innerAboutCol3">
+                <div class="thumbnail">
+                  <img src="./img/pexels-photo-92904.jpeg" alt="Picture of code on a screen">
+                  <div class="caption">
+                    <h3>Interests</h3>
+                    <p>
+                      I have yet to find an area of programming or computer engineering that I haven't been interested in. That being said, I am most interested in exploring and creating new technologies, as well as being at the fore front of improving existing products.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects Row 1-->
+    <div class="row" id="projects">
+      <div class="container-fluid">
+        <h1>Projects</h1>
+        <h5>(Click image to see slide show of project)</h5>
+        <div id="innerProjects">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="container-fluid innerProjectsCol">
+                <!-- Clicking on image triggers project1Modal -->
+                <img src="./img/PHP_Site_Screenshots/Screenshot_1.png" class="img-thumbnail" alt="Landing Page of PHP Site Screenshot" data-toggle="modal" data-target="#project1Modal">
+              </div>
+              <!-- project1Modal -->
+              <div class="modal fade bs-example-modal-lg" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="projectCarousel1" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="./img/PHP_Site_Screenshots/Screenshot_1.png" alt="Landing Page Screenshot">
+                          <div class="carousel-caption">
+                            Landing Page
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/PHP_Site_Screenshots/Screenshot_2.png" alt="Home Page Screenshot">
+                          <div class="carousel-caption">
+                            Home Page
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/PHP_Site_Screenshots/Screenshot_3.png" alt="Contact Page Screenshot">
+                          <div class="carousel-caption">
+                            Contact Page
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/PHP_Site_Screenshots/Screenshot_4.png" alt="Database Screenshot">
+                          <div class="carousel-caption">
+                            Databases
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/PHP_Site_Screenshots/Screenshot_5.png" alt="Another Database Screenshot">
+                          <div class="carousel-caption">
+                            Database Details
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#projectCarousel1" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#projectCarousel1" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal -->
+            </div>
+            <!-- End column -->
+            <div class="col-md-4">
+              <div class="container-fluid innerProjectsCol">
+                <!-- Clicking image triggers project2Modal -->
+                <img src="./img/MyShell/Screenshot_11.png" class="img-thumbnail" alt="MyShell program" data-toggle="modal" data-target="#project2Modal">
+              </div>
+              <!-- project2Modal -->
+              <div class="modal fade bs-example-modal-lg" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="projectCarousel2" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="./img/MyShell/Screenshot_11.png" alt="Running MyShell Program">
+                          <div class="carousel-caption">
+                            Starting MyShell Program
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/MyShell/Screenshot_12.png" alt="Running unix commands">
+                          <div class="carousel-caption">
+                            Running unix commands
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/MyShell/Screenshot_13.png" alt="opening nano in myshell">
+                          <div class="carousel-caption">
+                            Opening nano in MyShell
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/MyShell/Screenshot_14.png" alt="Returning to myshell">
+                          <div class="carousel-caption">
+                            Returning to MyShell
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#projectCarousel2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#projectCarousel2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal -->
+            </div>
+            <!-- End column -->
+            <div class="col-md-4">
+              <div class="container-fluid innerProjectsCol">
+                <!-- Clicking image triggers project3Modal -->
+                <img src="./img/Mastermind/Screenshot_8.png" class="img-thumbnail" alt="Pciture of shell running Mastermind program" data-toggle="modal" data-target="#project3Modal">
+              </div>
+              <!-- project3Modal -->
+              <div class="modal fade bs-example-modal-lg" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="projectCarousel3" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="./img/Mastermind/Screenshot_8.png" alt="Picture of shell running Mastermind program">
+                          <div class="carousel-caption">
+                            Mastermind Program
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/Mastermind/Screenshot_9.png" alt="Playing the Game">
+                          <div class="carousel-caption">
+                            Playing Game
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/Mastermind/Screenshot_10.png" alt="Lost Game">
+                          <div class="carousel-caption">
+                            Lost the Game
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#projectCarousel3" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#projectCarousel3" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal -->
+            </div>
+            <!-- End column -->
+            <div class="col-md-4 top-padding">
+              <div class="container-fluid innerProjectsCol">
+                <!-- Clicking image triggers project3Modal -->
+                <img src="./img/coolgame.win_screenshots/coolgame.win.png" class="img-thumbnail" alt="The coolgame.win game to demo controller" data-toggle="modal" data-target="#project4Modal">
+              </div>
+              <!-- project4Modal -->
+              <div class="modal fade bs-example-modal-lg" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="projectCarousel4" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/coolgame.win.png" alt="#">
+                          <div class="carousel-caption">
+                            game to demo controller on
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_22.png" alt="gamer/dev option selection">
+                          <div class="carousel-caption">
+                            gamer/dev option selection
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_20.png" alt="left/right option select for controller function">
+                          <div class="carousel-caption">
+                            left/right option select for controller function
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_23.png" alt="#">
+                          <div class="carousel-caption">
+                            controller with specified option
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="./img/coolgame.win_screenshots/Screenshot_21.png" alt="#">
+                          <div class="carousel-caption">
+                            controller with specified option
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#projectCarousel4" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#projectCarousel4" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End modal -->
+            </div>
+            <!-- End column -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Projects -->
+    <!-- Contact -->
+    <div class="row" id="contact">
+      <div class="container-fluid">
+        <h2>Contact</h2>
+        <br />
+        <p>
+          Email: dic20 (at) pitt.edu
+        </p>
+        <p>
+          Phone: 412-853-0235
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript for bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- my javascript code -->
+  <script src="./js/functionality.js"></script>
+
+  <noscript>This site will not function correctly without javascript enabled</noscript>
+</body>
+</html>
