@@ -42,6 +42,11 @@
     color: white;
 }
 
+.title > h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
 .row {
     position: absolute;
     display: block;
@@ -56,7 +61,7 @@
 }
 
 .row:hover {
-    border-bottom: solid black 2px;
+    background-color: darkmagenta !important;
     cursor: pointer;
 }
 
