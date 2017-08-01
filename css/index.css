@@ -3,7 +3,7 @@ body {
   margin: 0;
   position: relative;
   background-color: #fcf9f9;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Arial", sans-serif;
 }
 
 hr {
@@ -12,11 +12,16 @@ hr {
   border-width: 1.5px;
 }
 
+nav {
+  background-color: goldenrod;
+}
+
 nav.shrink {
   font-size: 1.5rem;
   padding-top: 0;
   overflow: visible;
   font-family: Impact, Charcoal, sans-serif;
+  background-color: transparent;
 }
 
 nav.navbar {
@@ -84,8 +89,8 @@ nav.navbar {
   #innerAboutCol3 > .thumbnail:hover {
   border-bottom: solid 1px grey;
   border-right: solid 1px grey;
-  /*height: 500px;*/
-  /*overflow: auto;*/
+  height: 500px;
+  overflow: auto;
 }
 
 .thumbnail > img {
@@ -127,7 +132,7 @@ nav.navbar {
 
 .innerProjectsCol > img:hover {
   cursor: pointer;
-  border: solid black 10px;
+  border: solid black 1px;
 }
 
 .innerProjectsCol > .thumbnail {
