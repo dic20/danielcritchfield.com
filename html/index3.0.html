@@ -20,31 +20,39 @@
     <div id="mainContentDiv">
         <div id="vid">
             <div class="title">
-                <h1>TITLE</h1>
+                <h1>WELCOME</h1>
             </div>
             <video id="coverVid" class="" width="" height="" playsinline autoplay muted loop>
                 <source src="../img/globe.mp4" type="video/mp4" /><!-- video obtained from: https://www.videvo.net/video/purple-data-globe-concept/4815/ -->
                 <!--<source src="../img/globe.webm" type="video/webm" />-->
             </video>
-            <video id="coverVidHolo" class="" width="" height="" playsinline autoplay muted loop>
-                <source src="../img/Futuristic_Holograph_Hologram.mp4" type="video/mp4" /><!-- video obtained from: https://www.videvo.net/video/futuristic-hologram/4730/ -->
+            <!--<video id="coverVidHolo" class="" width="" height="" playsinline autoplay muted loop>-->
+                <!--<source src="../img/Futuristic_Holograph_Hologram.mp4" type="video/mp4" />--><!-- video obtained from: https://www.videvo.net/video/futuristic-hologram/4730/ -->
                 <!--<source src="../img/globe.webm" type="video/webm" />-->
-            </video>
+            <!--</video>-->
             <div id="rows">
-                <div class="row row1">
-                    <h1 class="shadow">Link 1</h1>
+                <div class="row row1 linear-gradient">
+                    <h1 class="shadow"><a href="https://docs.google.com/document/d/1hUemnmz_5YQOcONR5YspBRuuzF5B_cpQc7O_NANcR70/edit" target="_blank">Resume</a></h1>
                 </div>
-                <div class="row row2">
-                    <h1 class="shadow">Link 2</h1>
+                <div class="row row2 linear-gradient">
+                    <h1 class="shadow"><a href="https://www.linkedin.com/in/daniel-critchfield-83b17b127/" target="_blank">LinkedIn</a></h1>
                 </div>
-                <div class="row row3">
-                    <h1 class="shadow">Link 3</h1>
+                <div class="row row3 linear-gradient">
+                    <h1 class="shadow"><a href="https://github.com/dic20" target="_blank">Github</a></h1>
                 </div>
             </div>
         </div>
+        <div id="aboutMe">
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div id="experience">
+            TestExperience
+        </div>
         <div class="btn-group-vertical align-left-fixed">
             <i onclick="fadeTransition('coverVid', 'i1')" id="i1" class="" aria-hidden="true"></i>
-            <i onclick="fadeTransition('coverVidHolo', 'i2')" id="i2" class="" aria-hidden="true"></i>
+            <i onclick="fadeTransition('aboutMe', 'i2')" id="i2" class="" aria-hidden="true"></i>
         </div>
     </div>
 

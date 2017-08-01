@@ -82,10 +82,10 @@ nav.navbar {
 #innerAboutCol1 > .thumbnail:hover,
  #innerAboutCol2 > .thumbnail:hover,
   #innerAboutCol3 > .thumbnail:hover {
-  border-bottom: solid 3px grey;
-  border-right: solid 3px grey;
-  height: 500px;
-  overflow: auto;
+  border-bottom: solid 1px grey;
+  border-right: solid 1px grey;
+  /*height: 500px;*/
+  /*overflow: auto;*/
 }
 
 .thumbnail > img {

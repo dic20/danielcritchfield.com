@@ -17,8 +17,9 @@ function start() {
 
     barsAnimation("purple", "65", "60", "55", 3000);
 
-    // make non globe vid covers display nothing initially 
-    $("#coverVidHolo").css("display", "none");
+    // make non globe background covers display nothing initially 
+    $("#aboutMe").css("display", "none");
+    $("#experience").css("display", "none");
 
     // make globe vid cover display class
     $("#coverVid").addClass("displaying");
@@ -34,7 +35,7 @@ function resize() {
     divHeight = $(window).height();
 
     $("#mainContentDiv").attr({ width: divWidth, height: divHeight });
-    $("#coverVid").attr({ width: divWidth, height: divHeight });
+    $(".displaying").attr({ width: divWidth, height: divHeight });
 }
 
 // fades out fadeElement and fades in displayElementID
@@ -59,9 +60,9 @@ function fadeTransition(displayElementID, newActiveElementID) {
     currentActiveElement.removeClass("fa fa-dot-circle-o active-element");
     currentActiveElement.addClass("fa fa-circle-thin inactive-element");
 
-    fadeElement.fadeOut("slow");
+    fadeElement.fadeOut(2000);
     displayElement.fadeIn("slow");
-
+    
     if (newActiveElementID == "i1") {
         barsAnimation("purple", "65", "60", "55", 2000);
     }
