@@ -1,3 +1,17 @@
+// pop up info about what this site is about on load
+window.onload = function() {
+  var modal = document.getElementById("myModal");
+  $(modal).slideDown("slow");
+  //$(modal).fadeIn("fast");
+}
+
+// exit modal
+function exitModal() {
+  var modal = document.getElementById("myModal");
+  $(modal).slideUp("slow");
+  //modal.style.display = "none";
+}
+
 //enable all tooltips
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();

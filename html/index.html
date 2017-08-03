@@ -14,10 +14,31 @@
   <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+  <!-- reference for modal https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2 -->
+  <!-- modal that opens on page load -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="exitModal()">&times;</span>
+      <div class="modal-header">
+        <h3>Welcome To My Site</h3>
+      </div>
+      <div class="content">
+        <br />
+        <p>
+          The purpose of this site is to show some of my web development skills, and to give some information about who I am as well as what I have done.
+        </p>
+        <br />
+      </div>
+      <div class="modal-footer">
+        <h4>Click the 'x' to close this (Upper Right Corner).</h4>
+      </div>
+    </div>
+  </div>
+  <!-- End modal --> 
   <div id="topDiv"></div>
   <!-- Navigation -->
   <nav class="navbar navbar-fixed-top" id="myNavbar" role="navigation">
-    <div class="container">
+    <div class="container" id="navContainer">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

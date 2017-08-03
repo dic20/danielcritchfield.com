@@ -12,8 +12,30 @@ hr {
   border-width: 1.5px;
 }
 
+#myModal {
+  position: relative;
+}
+
+.modal-header {
+  padding-top: 0;
+  border-bottom: none;
+  background-color: turquoise;
+}
+
+.modal-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none;
+  text-align: left;
+  background-color: turquoise;
+}
+
+.content > p {
+  padding-left: 1%;
+}
+
 nav {
-  background-color: goldenrod;
+  background-color: #fcf9f9;
 }
 
 nav.shrink {
